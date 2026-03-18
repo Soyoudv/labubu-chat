@@ -1,6 +1,8 @@
-typedef struct message {
+#include "user.h"
+
+typedef struct {
     char type[16];
-    char source[16];
-    char dest[16];
+    user_t* source;
+    user_t* dest;
     char content[1024];
 } message;
